@@ -1,0 +1,379 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+/* ...nav start... */
+.nav
+{
+    height: 100px;
+    background:#434343;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav .cname
+{
+ border: 1px solid white;
+ height: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+}
+
+.nav .cname a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav .cname h1
+{
+ color: white;
+ font-size: 45px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav .cname span
+{
+    color:#0099e5;
+}
+
+.nav .menu
+{
+ height: 100px;
+ /* background: lightblue; */
+ justify-content: center;
+ text-align: center;
+ padding: 40px;
+}
+
+.nav .menu ul
+{
+    list-style: none;
+}
+
+.nav .menu ul li
+{
+    display: inline;
+    margin-right: 20px;
+}
+.menu .fa-bars
+{
+    color: white;
+    font-size: 30px;
+    margin:-30px 300px;
+    position: absolute;
+    display: none;
+}
+
+.nav .menu ul li span
+{
+  color: #0099e5;
+}
+
+.nav .menu ul li a
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    transition: 0s;
+}
+.nav .menu ul li a:hover
+{
+    color: #0099e5;
+    transition: 0.5s;
+}
+/* ...nav end... */
+
+/* .....header start.... */
+
+.header
+{
+    height: 500px;
+    background: #0099e5; 
+    display: grid;
+    grid-template-rows: 100px 400px;
+}
+
+.header .nomi
+{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header .icon
+{
+  /* background: yellow; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+  /* position: relative; */
+  padding: 10px;
+}
+
+.icon .a
+{
+    border: 7px solid white;
+    overflow: hidden;
+
+    border-radius: 60%;
+    /* margin: 20px; */
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    top:210px;
+}
+.header .icon .b
+{
+    position: absolute;
+    border: 7px solid white;
+    overflow: hidden;
+    border-radius: 60%;
+    z-index: 1;
+    left: 350px;
+}
+.header .icon .c
+{
+    position: absolute;
+    border: 7px solid white;
+    overflow: hidden;
+    border-radius: 60%;
+    z-index: 1;
+    left: 650px;
+}
+
+.header .icon .d
+{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 60%;
+    z-index: 1;
+    left: 950px;
+    border: 7px solid white;
+}
+
+/* .......header end... */
+
+/* ....content start.... */
+
+.content
+{
+    height: 450px;
+    background: lightcoral;
+    /* border: 5px soild black; */
+    /* margin: 40px 80px; */
+    display: grid; 
+    grid-template-columns: 7fr 3fr;
+}
+
+.content .x
+{
+   /* background: yellow; */
+   border: 2px solid black;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+
+}
+
+.content .x .up
+{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0px 20px;
+    
+    
+}
+
+.content .x .up .imag1
+{
+    background-image: url(../image/ab1.jpg);
+    background-size: 100% 100%;
+    font-size: 50px;
+    font-family: Impact, Haettens   chweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding-left: 150px;
+    padding-top: 80px;
+   
+}
+.content .x .up .imag1 span
+
+{
+    z-index: -1;
+    position: relative;
+}
+.content .x .up .imag1:hover
+{
+    z-index: 1;
+    filter: saturate(300%);
+    cursor: pointer;
+}
+
+
+
+
+.content .x .up .imag2
+{
+    background: blue;
+    background-image: url(../image/ab2.jpg);
+    font-size: 50px;
+    
+    font-size: 50px;
+    font-family: Impact, Haettens   chweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding-left: 150px;
+    padding-top: 80px;
+
+}
+
+.content .x .up .imag2 span
+
+{
+    z-index: -1;
+    position: relative;
+}
+.content .x .up .imag2:hover
+{
+    z-index: 1;
+    filter: blur(0.8px);
+    cursor: pointer;
+}
+
+.content .x .down 
+{
+    border: 1px solid white;
+    background: #434343;
+    /* padding: 20px 20px; */
+    margin: 20px 20px;
+    justify-content: space-between;
+    /* text-align: center; */
+    padding:  20px 40px; 
+    
+}
+
+.content .x .down span
+{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 350px;
+    color: white;
+}
+
+.content .x .down button
+{
+    height: 40px;
+    width: 130px;
+    justify-content: space-between;
+    border: 2px solid white;
+    background: #434343;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content .x .down button:hover
+{
+    background: #337ab7;
+    border: none;
+}
+.content .x .up .img1
+{
+    position: absolute;
+
+}
+
+
+
+
+.content .y
+{
+    /* background: lightseagreen; */
+    border: 2px solid black;
+    background-image: url(../image/ab3.jpg);
+    background-size: 100% 100%;
+    justify-content: center;
+    text-align: center;
+    line-height: 450px;
+    font-size: 50px;
+    font-family: Impact, Haettens   chweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.content .y span
+
+{
+    z-index: -1;
+    position: relative;
+}
+.content .y:hover
+{
+    z-index: 1;
+    filter: contrast(150%);
+    cursor: pointer;
+}
+
+/* ....content end.... */
+
+/* ....content event start.... */
+
+.content_event
+{
+    height: 370px;
+    /* background: yellow;   */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    /* margin: 40px 80px; */
+    
+}
+
+
+
+
+.video_data h2
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 20px;
+}
+
+.video_data ul
+{
+    list-style: none;
+}
+.video_data ul  li
+{
+    /* margin-left: 20px; */
+    margin: 12px 20px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.video_data ul li:before
+{
+    content: '\003E';
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
